@@ -1,0 +1,28 @@
+nav ul {
+display: flex;
+gap: 1rem;
+list-style: none;
+background: #e2e2e2;
+padding: 1rem;
+}
+
+
+.nav-item {
+text-decoration: none;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+}
+
+
+.nav-item:hover {
+background-color: #ccc; 
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    padding: 1rem;
+    background-color: #e2e2e2;
+    margin-top: 2rem;
+    bottom: 0;
+}
