@@ -2,23 +2,21 @@ nav ul {
 display: flex;
 gap: 1rem;
 list-style: none;
-background: #e2e2e2;
+background: #cecccc;
 padding: 1rem;
 }
-
-
 .nav-item {
 text-decoration: none;
 padding: 0.5rem 1rem;
 border-radius: 5px;
 }
-
-
 .nav-item:hover {
-background-color: #ccc; 
+background-color: #9c9a9a; 
 }
-
 footer {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     display: flex;
     padding: 1rem;
@@ -26,3 +24,72 @@ footer {
     margin-top: 2rem;
     bottom: 0;
 }
+#mainHeader {
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgb(35, 59, 59);
+}
+main.add-post, main.login, main.index {
+    padding: 1rem;
+    text-align: center;
+    padding: auto;
+    min-height: 80vh; /* Ensures footer stays at the bottom */
+}
+
+.post-form, .login-form {
+    margin: 2rem auto; /* Centers */
+    padding: 1rem;
+    border-radius: 4px;
+    width: 300px;
+    background-color: cadetblue;
+}
+.post-form input, .post-form textarea, .login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+.post-form input[type="text"] {
+    font-weight: bold;
+}
+.post-form input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #cecccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.post-form input[type="submit"]:hover  {
+    background-color: #918f8f;
+}
+.login-form input[type="submit"]:hover  {
+    background-color: #918f8f;
+}
+.login-form input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #cecccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 200px;
+}
+.login-form input[type="text"], .login-form input[type="password"] {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: fit-content;
+    margin: auto;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-form {
+    width: 90%;
+  }
+}
+
