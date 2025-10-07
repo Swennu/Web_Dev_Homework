@@ -1,32 +1,39 @@
+/* Navigation bar */
 nav ul {
-display: flex;
-gap: 1rem;
-list-style: none;
-background: #cecccc;
-padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  background: #cecccc;
+  padding: 1rem;
+  justify-content: center;
 }
 .nav-item {
-text-decoration: none;
-padding: 0.5rem 1rem;
-border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: black;
 }
 .nav-item:hover {
-background-color: #9c9a9a; 
+  background-color: #9c9a9a; 
 }
+
+/* Footer */
 footer {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    padding: 1rem;
-    background-color: #e2e2e2;
-    margin-top: 2rem;
-    bottom: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+  background-color: #e2e2e2;
+  margin-top: 2rem;
 }
+
+/* Header */
 #mainHeader {
   color: rgb(35, 59, 59);
+  margin-bottom: 1rem;
 }
+/* Page Layouts */
 div > h1 {
     text-align: center;
     font-size: 1.8rem;
@@ -43,66 +50,147 @@ h1 ~ p {
 }
 
 main.add-post, main.login, main.index {
-    padding: 1rem;
-    text-align: center;
-    padding: auto;
-    min-height: 80vh; /* Ensures footer stays at the bottom */
+  padding: 1rem;
+  text-align: center;
+  min-height: 80vh; /* Ensures footer stays at the bottom */
 }
 
+/* Forms */
 .post-form, .login-form {
-    margin: 2rem auto; /* Centers */
-    padding: 1rem;
-    border-radius: 4px;
-    width: 300px;
-    background-color: cadetblue;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 300px;
+  background-color: cadetblue;
+  box-sizing: border-box;
 }
 .post-form input, .post-form textarea, .login-form input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
 }
 .post-form input[type="text"] {
-    font-weight: bold;
+  font-weight: bold;
 }
-.post-form input[type="submit"] {
-    padding: 0.5rem 1rem;
-    background-color: #cecccc;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.post-form input[type="submit"], .login-form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #cecccc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.post-form input[type="submit"]:hover  {
-    background-color: #918f8f;
+.post-form input[type="submit"]:hover, .login-form input[type="submit"]:hover {
+  background-color: #918f8f;
 }
-.login-form input[type="submit"]:hover  {
-    background-color: #918f8f;
-}
-.login-form input[type="submit"] {
-    padding: 0.5rem 1rem;
-    background-color: #cecccc;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    max-width: 200px;
-}
+
+/* Login fields */
 .login-form input[type="text"], .login-form input[type="password"] {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-width: fit-content;
-    margin: auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: auto;
 }
+
+/* Responsive */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
     align-items: center;
   }
-
   .post-form {
     width: 90%;
+    margin: 1rem auto;
   }
 }
 
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 600px;
+  overflow-y: auto;       /* vertical scroll only */
+  overflow-x: hidden;     /* no horizontal scrolling */
+  max-height: 75vh;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Individual post box */
+.post {
+  background-color: cadetblue;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Post image */
+.post img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Text inside post */
+.post p {
+  margin-top: 0.5rem;
+}
+
+/* Timestamp */
+.timestamp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1rem;
+  color: #292929;
+}
+/* creates vertical space below the timestamp */
+.post p:first-of-type {
+  margin-top: 1.5rem;
+}
+
+/* Like button */
+.like-button {
+  margin-top: 0.5rem;
+  color: #292929;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.like-button:hover {
+  color: rgb(36, 83, 107);
+}
+
+/* Demonstrating required selectors */
+.post + .post {
+  border-top: 3px solid #bbb; /* Adjacent sibling selector */
+}
+.posts-container > .post {
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Child selector */
+}
+h2 ~ p {
+  font-style: italic; /* General sibling selector */
+}
+/* Mobile-friendly posts */
+@media (max-width: 600px) {
+  .posts-container {
+    max-width: 95%;
+    padding: 0;
+  }
+  .post {
+    width: 100%;
+    border-radius: 12px;
+    padding: 0.8rem;
+  }
+}
