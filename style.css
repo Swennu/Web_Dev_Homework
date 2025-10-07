@@ -104,6 +104,12 @@ main.add-post, main.login, main.index {
     width: 90%;
     margin: 1rem auto;
   }
+  .login-form {
+  max-width: 300px;
+  min-width: 200px;
+  width: 90%;
+  margin: 1rem auto;
+  }
 }
 
 .posts-container {
