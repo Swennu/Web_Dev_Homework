@@ -6,65 +6,27 @@
   <title>Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="nav-item">Home</a></li>
-      <li><a href="addPost.html" class="nav-item">Add Post</a></li>
-      <li><a href="login.html" class="nav-item">Login</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="addPost.html" class="nav-item">Add Post</a></li>
+        <li><a href="login.html" class="nav-item">Login</a></li>
+      </ul>
+    </nav>
 
   <main class="index">
     <h1 id="mainHeader">Posts</h1>
 
-    <section class="posts-container">
-      <!-- Post 1 -->
-      <div class="post">
-        <div class="timestamp">Oct 7, 2025</div>
-        <p><strong>Tartu 2024</strong></p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tartu_Raekoja_platsi_vaade.jpg/1199px-Tartu_Raekoja_platsi_vaade.jpg" alt="Tartu square" />
-        <p>Beautiful evening in Tartu’s Town Hall Square!</p>
-        <div class="like-button">👍 Like</div>
-      </div>
-
-      <!-- Post 2 -->
-      <div class="post">
-        <div class="timestamp">Oct 6, 2025</div>
-        <p><strong>Anyone knows in which room is the WebDev practicum?</strong></p>
-        <div class="like-button">👍 Like</div>
-      </div>
-
-      <!-- Post 3 -->
-      <div class="post">
-        <div class="timestamp">Oct 5, 2025</div>
-        <p><strong>Weekend vibe 😎</strong></p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Peipsi_p%C3%B5hjarannik.jpg/500px-Peipsi_p%C3%B5hjarannik.jpg" alt="Lake Peipus" />
-        <p>Nothing beats a quiet walk by Lake Peipus.</p>
-        <div class="like-button">👍 Like</div>
-      </div>
-
-      <!-- Post 4 -->
-      <div class="post">
-        <div class="timestamp">Oct 3, 2025</div>
-        <p><strong>Reminder:</strong> The group homework is due tonight!</p>
-        <div class="like-button">👍 Like</div>
-      </div>
-
-      <!-- Post 5 -->
-      <div class="post">
-        <div class="timestamp">Oct 1, 2025</div>
-        <p><strong>New project coming soon 🚀</strong></p>
-        <img src="https://miro.medium.com/v2/resize:fit:1400/1*lBa9nbB7jYpd_YKi5uu6Cg.jpeg" alt="Coding image" />
-        <p>Excited to work on our new web development idea!</p>
-        <div class="like-button">👍 Like</div>
-      </div>
+    <section class="posts-container" id ="posts-container">
+      <p>Loading posts...</p>
+      
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 PostIt Project</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

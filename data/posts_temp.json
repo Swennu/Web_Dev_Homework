@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "Oct 7, 2025",
+    "title": "Tartu 2024",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tartu_Raekoja_platsi_vaade.jpg/1199px-Tartu_Raekoja_platsi_vaade.jpg",
+    "alt": "Tartu square",
+    "content": "Beautiful evening in Tartu’s Town Hall Square!"
+  },
+  {
+    "timestamp": "Oct 6, 2025",
+    "title": "Anyone knows in which room is the WebDev practicum?",
+    "image": null,
+    "alt": null,
+    "content": null
+  },
+  {
+    "timestamp": "Oct 5, 2025",
+    "title": "Weekend vibe 😎",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Peipsi_p%C3%B5hjarannik.jpg/500px-Peipsi_p%C3%B5hjarannik.jpg",
+    "alt": "Lake Peipus",
+    "content": "Nothing beats a quiet walk by Lake Peipus."
+  },
+  {
+    "timestamp": "Oct 3, 2025",
+    "title": "Reminder:",
+    "image": null,
+    "alt": null,
+    "content": "The group homework is due tonight!"
+  },
+  {
+    "timestamp": "Oct 1, 2025",
+    "title": "New project coming soon 🚀",
+    "image": "https://miro.medium.com/v2/resize:fit:1400/1*lBa9nbB7jYpd_YKi5uu6Cg.jpeg",
+    "alt": "Coding image",
+    "content": "Excited to work on our new web development idea!"
+  }
+]
