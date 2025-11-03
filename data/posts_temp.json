@@ -1,5 +1,12 @@
 [
   {
+  "timestamp": "Oct 9, 2025",
+  "title": "Best study corner in Delta 📚",
+  "image": "https://arhitektuuripreemiad.ee/wp-content/uploads/2020/09/TU_Delta_MBA5215_c_MarisTomba_72dpi-1920x1280.jpg",
+  "alt": "Tartu University Delta Centre",
+  "content": "Found the coziest place to code with a coffee and a view!"
+  },
+  {
     "timestamp": "Oct 7, 2025",
     "title": "Tartu 2024",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tartu_Raekoja_platsi_vaade.jpg/1199px-Tartu_Raekoja_platsi_vaade.jpg",
@@ -33,5 +40,33 @@
     "image": "https://miro.medium.com/v2/resize:fit:1400/1*lBa9nbB7jYpd_YKi5uu6Cg.jpeg",
     "alt": "Coding image",
     "content": "Excited to work on our new web development idea!"
+  },
+  {
+    "timestamp": "Sept 30, 2025",
+    "title": "What a day!",
+    "image": null,
+    "alt": null,
+    "content": "Finally finished the JavaScript module. Time to celebrate!"
+  },
+  {
+    "timestamp": "Sept 20, 2025",
+    "title": "Nothing",
+    "image": null,
+    "alt": null,
+    "content": null
+  },
+  {
+  "timestamp": "Sept 20, 2025",
+  "title": "Finally fixed that bug 😅",
+  "image": null,
+  "alt": null,
+  "content": "Spent hours debugging… turned out to be a missing semicolon. Classic!"
+  },
+  {
+  "timestamp": "Oct 12, 2025",
+  "title": "Coffee break at Werner ☕",
+  "image": "https://www.werner.ee/photos/wernermai-19_large.jpg",
+  "alt": "Cafe Werner Tartu",
+  "content": "Good coffee + good company = great afternoon!"
   }
 ]
