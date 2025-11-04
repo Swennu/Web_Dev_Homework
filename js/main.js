@@ -37,3 +37,17 @@ async function renderPosts(posts) {
     });
 }
 
+const profile = document.getElementById('profile');
+  const dropdown = document.getElementById('dropdown');
+
+  profile.addEventListener('click', () => {
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Optional: Close dropdown if you click outside
+  window.addEventListener('click', (e) => {
+    if (!profile.contains(e.target)) {
+      dropdown.style.display = 'none';
+    }
+  });
+
